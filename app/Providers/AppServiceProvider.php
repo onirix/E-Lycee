@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace ELycee\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

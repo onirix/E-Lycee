@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace ELycee\Http\Controllers\Auth;
 
-use App\User;
+use ELycee\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use ELycee\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: ELycee
+        psr4_prefix: ELycee
         src_path: app
