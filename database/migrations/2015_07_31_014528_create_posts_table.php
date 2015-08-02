@@ -14,7 +14,17 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->unsigned();
+            $table->string('title', 100);
+            $table->string('abstract', 255)->nullable();
+            $table->text('content');
+            $table->string('url_thumbnail', 150);
+            $table->enum('status', ['publish', 'unpublish'])->default('unpublish');
             $table->timestamps();
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('SET NULL');
         });
     }
 

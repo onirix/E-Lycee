@@ -14,7 +14,10 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->string('title', 100);
+            $table->text('content');
+            $table->enum('class_level', ['terminal', 'premiere']);
+            $table->enum('status', ['publish', 'unpublish'])->default('unpublish');
         });
     }
 
