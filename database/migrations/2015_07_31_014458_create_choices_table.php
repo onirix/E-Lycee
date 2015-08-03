@@ -14,7 +14,7 @@ class CreateChoicesTable extends Migration
     {
         Schema::create('choices', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('question_id')->unsigned();
+            $table->integer('question_id')->unsigned()->nullable();
             $table->text('content');
             $table->enum('status', ['yes', 'no'])->default('no');
             $table->foreign('question_id')
