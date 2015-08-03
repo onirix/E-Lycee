@@ -29,6 +29,6 @@ class Question extends Model
 
     public function choices()
     {
-        return $this->hasMany('ELycee\Choices');
+        return $this->hasMany('ELycee\Choice');
     }
 }
