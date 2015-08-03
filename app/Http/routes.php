@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('q', 'FrontController@index');
+
+
+    /*
+    Route::get('/', 'FrontController@index');
+    Route::get('single/{id}', 'FrontController@showSingle');
+    Route::get('category/{id}', 'FrontController@showCategory');
+    Route::get('tag/{id}', 'FrontController@showTag');
+    */
+
+

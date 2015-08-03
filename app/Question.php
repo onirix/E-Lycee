@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Question extends Model
 {
-    use UserTrait, RemindableTrait;
-
     /**
      * The database table used by the model.
      *
