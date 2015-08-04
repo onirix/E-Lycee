@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF8">
-    <title>{{ $title or "Blog-Laravel" }}</title>
+    <title>E-Lycee {{" - ". $title }}</title>
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/bootstrap-theme.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
@@ -36,17 +36,11 @@
         </div>
         <div class="col-lg-4">
             @section('sidebar')
-                <h2>Questions</h2>
-                @if(count($questions)>0)
-                    @foreach($questions as $question)
-                        <div class="clearfix">
-                            <h2>{{$question->title}}</h2>
-                            <br><small>{{$question->created_at->format('d/m/Y h:i:s')}}</small>
-                            <p>{{$question->content}}</p>
-                            <br><small>{{$question->status}}</small>
-                        </div>
-                    @endforeach
-                @endif
+                <ul>
+                    <li>Blabla</li>
+                    <li>OleOle</li>
+                    <li>AieAieAie</li>
+                </ul>
             @show
         </div>
     </div>
