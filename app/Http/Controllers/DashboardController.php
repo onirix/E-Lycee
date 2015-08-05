@@ -18,7 +18,11 @@ class DashboardController extends Controller {
 
     public function getIndex()
     {
-        return view('dashboard.index');
+        return view('dashboard.index', ['title'=>'E-Lycee']);
+
+//        return view('dashboard.index');
     }
+
+
 
 }

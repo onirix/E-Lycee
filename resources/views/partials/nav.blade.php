@@ -11,9 +11,9 @@
                             {{--<li><a href="{{url('category/'.$category->id)}}">{{$category->title}}</a></li>--}}
                         {{--@endforeach--}}
                     {{--@endif--}}
-                    {{--@if(!Auth::guest())--}}
-                        {{--<li class="warning"><a href="{{url('dashboard')}}">dashboard</a></li>--}}
-                    {{--@endif--}}
+                    @if(!Auth::guest())
+                        <li class="warning"><a href="{{url('dashboard')}}">dashboard</a></li>
+                    @endif
                 </ul>
             </div>
         </div>

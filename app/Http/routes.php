@@ -13,6 +13,8 @@
 
 Route::get('/', 'FrontController@index');
 
+Route::get('dashboard', 'DashboardController@getIndex');
+
 //Route::get('/', function () {
 //    return view('welcome');
 //});
