@@ -11,14 +11,15 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'FrontController@index');
 
 //Route::get('/', function () {
 //    return view('welcome');
 //});
 
-Route::get('q', 'FrontController@index');
+//Route::get('q', 'FrontController@index');
 
+Route::controllers(['auth' =>'Auth\AuthController']);
 
     /*
     Route::get('/', 'FrontController@index');

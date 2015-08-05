@@ -4,6 +4,7 @@ namespace ELycee\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
+use Illuminate\Http\RedirectResponse;
 
 class RedirectIfAuthenticated
 {
@@ -35,7 +36,8 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next)
     {
         if ($this->auth->check()) {
-            return redirect('/home');
+            return new RedirectResponse(url('/dashboard/index'));
+//            return redirect('/home');
         }
 
         return $next($request);

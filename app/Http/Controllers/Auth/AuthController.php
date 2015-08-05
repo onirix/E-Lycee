@@ -3,7 +3,7 @@
 namespace ELycee\Http\Controllers\Auth;
 
 use ELycee\User;
-use Validator;
+use ELycee\Validator;
 use ELycee\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
@@ -22,6 +22,8 @@ class AuthController extends Controller
     */
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+
+    protected $redirectPath = 'dashboard/index';
 
     /**
      * Create a new authentication controller instance.
