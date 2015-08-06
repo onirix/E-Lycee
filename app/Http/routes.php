@@ -19,7 +19,7 @@ Route::get('dashboard', 'DashboardController@getIndex');
 //    return view('welcome');
 //});
 
-//Route::get('q', 'FrontController@index');
+Route::get('questionnaire', 'QuestionController@index');
 
 Route::controllers(['auth' =>'Auth\AuthController']);
 

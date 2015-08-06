@@ -1,0 +1,131 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+html, body, ul, ol {
+  margin: 0;
+  padding: 0; }
+
+.col-3, section {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin-bottom: 4rem;
+  text-align: left; }
+
+.icon, .icon-A, .icon-O, .icon-face, .socialize, .icon-s, .icon-skype, .icon-twitter {
+  display: inline-block;
+  background-image: url('../images/sprite.png'); }
+
+.icon-A {
+  background-position: 0px 0px;
+  width: 220px;
+  height: 220px; }
+
+.icon-O {
+  background-position: -220px 0px;
+  width: 220px;
+  height: 220px; }
+
+.icon-face, .socialize {
+  background-position: 0px -220px;
+  width: 220px;
+  height: 220px; }
+
+.icon-s {
+  background-position: -220px -220px;
+  width: 220px;
+  height: 220px; }
+
+.icon-skype {
+  background-position: -440px 0px;
+  width: 220px;
+  height: 220px; }
+
+.icon-twitter {
+  background-position: -440px -220px;
+  width: 220px;
+  height: 220px; }
+
+html {
+  background: #eee url("../images/bg.png"); }
+
+body {
+  font: 1.2rem Roboto;
+  margin: 2rem auto;
+  color: #eee;
+  line-height: 1.4;
+  width: 90%; }
+
+[id=main] {
+  clear: both;
+  margin-top: 4rem;
+  text-align: justify; }
+  [id=main] :after {
+    content: "";
+    display: inline-block;
+    width: 100%; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/* ------------------------------------------------- *\
+          Header
+\* ------------------------------------------------- */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 4rem;
+  padding-top: 1rem;
+  line-height: 1rem;
+  background-color: rgba(115, 8, 0, 0.9);
+  width: 100%;
+  z-index: 100; }
+  header h1 {
+    margin: 0;
+    color: #335271;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-shadow: 1px 1px 1px #fff;
+    text-decoration: none; }
+  header .header__logo {
+    float: left; }
+  header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* ------------------------------------------------- *\
+    menu
+\* ------------------------------------------------- */
+nav {
+  padding: 0;
+  margin-top: 0rem;
+  margin-left: 21rem;
+  display: block; }
+  nav a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0 0 4px 0;
+    overflow: hidden;
+    color: #335271;
+    text-decoration: none;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .4s ease; }
+  nav a:hover {
+    background-color: rgba(0, 0, 0, 0.9); }
+
+.square {
+  with: 250px;
+  height: auto;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px); }
+
+h1 {
+  font-size: 1rem; }
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 1.5rem; } }

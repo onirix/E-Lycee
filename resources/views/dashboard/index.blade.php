@@ -2,7 +2,7 @@
 
 @section('content')
    <ul>
-       <li><a href="{{url('q')}}">Questions</a></li>
+       <li><a href="{{url('questionnaire')}}">Questionnaire</a></li>
        <li>Quoi d’autre ?</li>
    </ul>
 @stop

@@ -8,7 +8,7 @@
 
     @if(count($questions)>0)
         @foreach($questions as $question)
-            <h2><a href="{{url('single/'.$question->id)}}">{{$question->title}}</a></h2>
+            <h2><a href="{{url('q/'.$question->id)}}">{{$question->title}}</a></h2>
             <p>{{ $question->content }}</p>
 
             {{ $nb_good_answers = 0 }}
