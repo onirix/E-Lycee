@@ -24,7 +24,8 @@ class QuestionController extends Controller
 
         //        $questions  = Question::all();
         $questions    = Question::with('choices')->get();
-//        $questions    = Question::with('choices')->get()->where('class_level', 'terminal');;
+
+//        $questions    = Question::with('choices')->get()->where('class_level', 'terminal');
 //        $questions    = Question::with('choices')->get();
 
 //        $questions  = Question::with('choices')->find(1);

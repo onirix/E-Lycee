@@ -1,4 +1,5 @@
-@extends('layouts.master')
+@extends('layouts.admin')
+{{--@extends('layouts.master')--}}
 
 @section('content')
 
@@ -11,16 +12,17 @@
             <h2><a href="{{url('q/'.$question->id)}}">{{$question->title}}</a></h2>
             <p>{{ $question->content }}</p>
 
-            {{ $nb_good_answers = 0 }}
+            <?php $nb_good_answers = 0 ?>
 
             @foreach($question->choices as $choice)
                 @if($choice->status==='yes')
-                {{ $nb_good_answers++ }}
+                    <?php $nb_good_answers++ ?>
                 @endif
             @endforeach
 
             @foreach($question->choices as $choice)
-                {{ $input_type = count($nb_good_answers)>1?'checkbox':'radio'}}
+
+                <?php $input_type = $nb_good_answers>1?'checkbox':'radio' ?>
 
                 <input type="{{$input_type}}" name="{{$input_type.'-'.$question->id}}">{{$choice->content}}<br>
             @endforeach
