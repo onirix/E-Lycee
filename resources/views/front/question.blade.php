@@ -3,7 +3,7 @@
 
 @section('content')
 
-    Vue : question.blade
+    Vue : front.question.blade
 
     {{--{{dd($questions)}}--}}
 

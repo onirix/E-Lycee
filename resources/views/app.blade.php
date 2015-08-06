@@ -33,28 +33,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">E-Lycee</a>
+            <a class="navbar-brand" href="{{url('/')}}">E-Lycee</a>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="{{ url('/') }}">Accueil</a></li>
-            </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                @if (Auth::guest())
-                    <li><a href="{{ url('/auth/login') }}">Connexion</a></li>
-                    <li><a href="{{ url('/auth/register') }}">S’enregistrer</a></li>
-                @else
-                    <li class="dropdown">
-                        <a href="dashboard" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
-                        </ul>
-                    </li>
-                @endif
-            </ul>
-        </div>
+        @include('partials.nav')
     </div>
 </nav>
 

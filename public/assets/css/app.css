@@ -45,14 +45,16 @@ html, body, ul, ol {
   height: 220px; }
 
 html {
-  background: #eee url("../images/bg.png"); }
+  /*background: #eee url("../images/bg.png");*/
+}
 
 body {
-  font: 1.2rem Roboto;
-  margin: 2rem auto;
-  color: #eee;
-  line-height: 1.4;
-  width: 90%; }
+    font: 1.2rem Roboto;
+    margin: 2rem auto;
+    color: #eee;
+    line-height: 1.4;
+    /*width: 90%;*/
+}
 
 [id=main] {
   clear: both;
@@ -101,9 +103,10 @@ header {
 nav {
   padding: 0;
   margin-top: 0rem;
-  margin-left: 21rem;
-  display: block; }
-  nav a {
+  /*margin-left: 21rem;*/
+  display: block;
+}
+nav a {
     display: inline-block;
     padding: 1rem 2rem;
     margin: 0 0 4px 0;
@@ -113,10 +116,15 @@ nav {
     font-size: 1.2rem;
     vertical-align: middle;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: all .4s ease; }
-  nav a:hover {
-    background-color: rgba(0, 0, 0, 0.9); }
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    transition: all .4s ease;
+}
+nav a:hover {
+    /*background-color: rgba(0, 0, 0, 0.9);*/
+}
+nav a span.glyphicon {
+    margin-right: 0.5em;
+}
 
 .square {
   with: 250px;

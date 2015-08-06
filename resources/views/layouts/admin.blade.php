@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF8">
     <title>{{ $title }}</title>
+    <link href="{{ asset('assets/css/dashboard.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <script src="{{asset('assets/js/jquery.min.js')}}" type="text/javascript"></script>
 </head>

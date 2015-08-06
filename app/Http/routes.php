@@ -11,8 +11,18 @@
 |
 */
 
+/* ------------------------------------------------- *\
+    Partie public
+\* ------------------------------------------------- */
 Route::get('/', 'FrontController@index');
 
+Route::get('le-lycee', function () {
+    return view('front.lycee', ['title'=>'Le Lycée']);
+});
+
+/* ------------------------------------------------- *\
+    Partie privée (élèves et professeurs)
+\* ------------------------------------------------- */
 Route::get('dashboard', 'DashboardController@getIndex');
 
 //Route::get('/', function () {
